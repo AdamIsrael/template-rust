@@ -1,11 +1,17 @@
 # Template
 
-This is a simple template for a Rust project using the [Zed](https://zed.dev/) editor and [development containers](https://containers.dev/) and the [DevPod](https://devpod.sh/) CLI to manage it all.
+This is a simple template for a Rust project using the [Zed](https://zed.dev/) editor and [development containers](https://containers.dev/) and the [DevPod](https://devpod.sh/) CLI to manage it all. It's an opinionated setup for developing on an immutable operating system, such as [Bluefin](https://projectbluefin.io/).
+
+Zed will install the `rust-analyzer` language server inside the container, which will also contain any dependencies your application will need.
 
 ## Getting Started
 
 1. Install the [DevPod CLI](https://devpod.sh/docs/getting-started/install#install-devpod-cli).
-2. Copy this repository and file off the serial numbers
+2. Copy this repository and file off the serial numbers:
+  a. `rm -rf .git && git init`
+  b. Modify the `devcontainer/Dockerfile` to add any dependencies required for your project.
+  c. Rename the project in `Cargo.toml`.
+  d. Happy coding!
 
 ## Development
 
