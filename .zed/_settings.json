@@ -1,9 +1,0 @@
-{
-  "lsp": {
-    "rust-analyzer": {
-      "binary": {
-        "path": "/usr/local/cargo/bin/rust-analyzer"
-      }
-    }
-  }
-}
