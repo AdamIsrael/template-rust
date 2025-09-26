@@ -6,12 +6,12 @@ Zed will install the `rust-analyzer` language server inside the container, which
 
 ## Getting Started
 
-1. Install the [DevPod CLI](https://devpod.sh/docs/getting-started/install#install-devpod-cli).
-2. Copy this repository and file off the serial numbers:
-  a. `rm -rf .git && git init`
-  b. Modify the `devcontainer/Dockerfile` to add any dependencies required for your project.
-  c. Rename the project in `Cargo.toml`.
-  d. Happy coding!
+- Install the [DevPod CLI](https://devpod.sh/docs/getting-started/install#install-devpod-cli).
+- Copy this repository and file off the serial numbers:
+  - `rm -rf .git && git init`
+  - Modify the `devcontainer/Dockerfile` to add any dependencies required for your project.
+  - Rename the project in `Cargo.toml`.
+  - Happy coding!
 
 ## Development
 
