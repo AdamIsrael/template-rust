@@ -1,0 +1,16 @@
+{
+    "name": "Rust Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["rust-lang.rust-analyzer"]
+        }
+    },
+    "containerUser": "vscode",
+    "remoteUser": "vscode",
+    "updateRemoteUserUID": true, // Automatically update the UID/GID in the container
+    "postCreateCommand": "cargo build"
+}
