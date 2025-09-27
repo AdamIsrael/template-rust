@@ -1,0 +1,28 @@
+[template]
+cargo_generate_version = ">=0.22"
+
+[placeholders.appid]
+type = "string"
+prompt = "RDNN App ID (com.github.username.ProjectName)"
+regex = "^[a-zA-Z0-9]+\\.[a-zA-Z0-9]+\\.[a-zA-Z0-9-_]+(\\.[a-zA-Z0-9-_]+)?$"
+default = "com.github.AdamIsrael.template-rust"
+
+[placeholders.description]
+type = "string"
+prompt = "Description of application"
+default = "A Rust application by Adam Israel"
+
+[placeholders.license]
+type = "string"
+prompt = "SPDX license identifier (https://spdx.org/licenses/)"
+default = "MIT"
+
+[placeholders.repository-url]
+type = "string"
+prompt = "Repository URL (https://*)"
+default = "https://github.com/AdamIsrael/template-rust"
+regex = "^https?:\\/\\/(www\\.)?[\\w\\-]+(\\.[\\w\\-]+)+[/#?]?.*$"
+
+[hooks]
+pre = ["generate/rename.rhai"]
+post = ["generate/cleanup.rhai"]
